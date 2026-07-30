@@ -26,14 +26,8 @@ struct ContentView: View {
                 Text("iOS Fullstack Developer")
                 Divider()
                 
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(.white)
-                    .frame(height: 50)
-                    .overlay(HStack{
-                        Image(systemName: "phone.fill")
-                            .foregroundColor(.green)
-                        Text("+49 176 46703864")
-                    })
+                InfoView(imageName: "phone.fill", text: "+49 176 46703864")
+                InfoView(imageName: "envelope.fill", text: "mail@jonas-mahlburg.de")
    
             }
             .padding()
